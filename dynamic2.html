@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic website Example</title>
+</head>
+<body>
+
+    <h2>Dynamic Background color changer</h2>
+    <button onclick="changecolor()">Change Background color</button>
+
+    <script>
+        function changecolor() {
+            let colors = ["lightblue", "lightgreen", "lightpink", "lightyellow","orange","pink","black","blue","violet"];
+            let randomIndex = Math.floor(Math.random() * colors.length);
+
+            document.body.style.backgroundColor = colors[randomIndex];
+
+        }
+    </script>
+
+</body>
+</html>
